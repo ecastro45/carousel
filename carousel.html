@@ -1,0 +1,43 @@
+<!<!DOCTYPE>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>JavaScript Carousel</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="slideshow-container"> <!-- Step 1: Create a <Div> container -->
+            <div class="pic fade"> <!-- Step 2: Create a <Div> for your images --> 
+                <div class="numtext">1 / 3</div> <!-- Step 2(b): *Optional* Creat a <Div> for page number -->
+                <img src="img/globe.jpg" style="width:100%"> <!-- Step 3: Create an image tag and set to 100% wdth -->
+                <div class="text">Flushing Meadow Park: Unisphere</div> <!-- Step 4: Create a <Div> for your text -->              
+            </div>
+                               <!-- Create as many additional <Div> for pictures as you like following the about steps -->
+            <div class="pic fade">
+                <div class="numtext">2 / 3</div> 
+                <img src="img/theater.jpg" style="width:100%">
+                <div class="text">Flushing Meadow Park: Theater</div>                  
+            </div>  
+            
+            <div class="pic fade">
+                <div class="numtext">3 / 3</div> 
+                <img src="img/gold.jpg" style="width:100%">
+                <div class="text">Flushing Meadow Park: Arena</div>                  
+            </div>
+                    <!-- Step 5: Create two anchors which will represent the arrows on the side of pictures to move to the next picture -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- Step 6: Create a breake tag to give space between the picture Carousel and dots --> 
+
+            <!-- Step 7: Creat a series of "Dots" that represents each picture in the Carousel -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>  
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>          
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
